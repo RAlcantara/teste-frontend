@@ -1,0 +1,41 @@
+
+<div class="row pd-t40">
+
+   <div class="col s12 m12">
+      <h1> {{task.title}} </h1>
+   </div>
+
+   <div class="col s12 m12 pd-20">
+      <p> {{task.description}} </p>
+   </div>
+
+   <div class="col s12 m12">
+      <i class="small material-icons col m1">query_builder</i>
+      <p class="col m10"> De {{task.start}} as {{task.finish}} </p>
+   </div>
+
+   <div class="col s12 m12">
+      <i class="small material-icons col m1">location_on</i>
+      <address class="col m10"> {{task.address.street}}, {{task.address.number}} - {{task.address.city}}</address>
+   </div>
+
+   <div class="col s12 m12">
+      <i class="small material-icons col m1">monetization_on</i>
+      <p class="col m10"> R${{task.price}},00 </p>
+   </div>
+
+   <div class="col s12 m12">
+      <i class="small material-icons col m1">label</i>
+      <span class="col m10"> {{task.category}} </span>
+   </div>
+
+   <div class="col s12 m12 pd-t20">
+      <img class="img-circle img-responsive" src="{{task.consultant.avatar}}" alt="{task.consultant.name}}"> <span>{{task.consultant.name}}</span>
+   </div>
+</div>
+
+
+<mat-dialog-actions>
+  <button class="waves-effect waves-light btn btn-orange" mat-button mat-dialog-close>Inscrição</button>
+</mat-dialog-actions>
+

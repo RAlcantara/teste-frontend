@@ -1,0 +1,15 @@
+<div class="row pd-t40">
+   <div class="col s12 m4" *ngFor="let course of object.data">
+      <div class="card card-link darken-1" (click)="showDialog(course)">
+         <div class="card-content black-text">
+            <span class="card-title">{{ course.category }}</span>
+            <h1>{{ course.title }}</h1>
+            <span>{{ course.address.city }}</span>
+         </div>
+         <div class="card-action">
+            <a href="#">{{ course.start}}</a>
+            <a href="#"> <i class="small material-icons">date_range</i></a>
+         </div>
+      </div>
+   </div>
+</div>

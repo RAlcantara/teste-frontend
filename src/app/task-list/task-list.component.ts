@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from '../models/task.model';
 import { HttpClient } from '@angular/common/http';
 import { TaskItemComponent } from '../task-item/task-item.component';
 import { MatDialog, MatDialogConfig } from '@angular/material';
@@ -26,7 +25,7 @@ export class TaskListComponent implements OnInit {
       );
    }
 
-   showDialog(task?: Task): void {
+   showDialog(task?): void {
       const config: MatDialogConfig<any> = (task) ? {data: { task }} : null;
       this.dialog.open(TaskItemComponent, config);
    }
